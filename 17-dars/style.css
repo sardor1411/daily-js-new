@@ -1,0 +1,11 @@
+.data2 {
+    margin-top: 25px;
+    border: 1px solid red;
+}
+button{
+    width: 100px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}

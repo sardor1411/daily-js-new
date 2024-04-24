@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    border: 1px solid red;
+    height: 630px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#img {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 550px;
+    margin-top: 30px;
+    filter: drop-shadow(5px 1px 10px);
+}
+
+#imgBit {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 550px;
+    margin-top: 30px;
+    filter: drop-shadow(5px 1px 10px);
+}
+
+#imgUzb {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 550px;
+    margin-top: 30px;
+    filter: drop-shadow(5px 1px 10px);
+}
+
+#imgBit {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 550px;
+    margin-top: 30px;
+    filter: drop-shadow(5px 1px 10px);
+}
+#imgBitto {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 300px;
+    margin-top: 30px;
+    filter: drop-shadow(5px 1px 10px);
+}
+#imgDra {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 550px;
+    margin-top: 30px;
+    filter: drop-shadow(5px 1px 10px);
+}
+
+img:active {
+    scale: 0.950;
+}
+
+#dev2 {
+    width: 400px;
+}
+
+input {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+p:active {
+    z-index: 50;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.functionMain {
+    height: 500px;
+}
+
+.levelUp {
+    height: auto;
+    display: flex;
+}
+
+#buttonUP {
+    margin: auto;
+    margin-top: 25px;
+    width: 16.4%;
+    height: 50px;
+    font-weight: 700;
+}
+
+#buttonUP1 {
+    margin: auto;
+    margin-top: 25px;
+    width: 16.4%;
+    height: 50px;
+    font-weight: 700;
+}
+
+#buttonUP2 {
+    margin: auto;
+    margin-top: 25px;
+    width: 16.4%;
+    height: 50px;
+    font-weight: 700;
+}
+
+#buttonUP3 {
+    margin: auto;
+    margin-top: 25px;
+    width: 16.4%;
+    height: 50px;
+    font-weight: 700;
+}
+
+#maxlevel1 {
+    margin: auto;
+    margin-top: 25px;
+    width: 16.4%;
+    height: 50px;
+    font-weight: 700;
+}
+
+#prom {
+    margin-top: 25px;
+    height: 40px;
+    width: 50%;
+}
+
+#active {
+    width: 5%;
+    height: 40px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+#imgDra {
+    width: 300px;
+}
+
+#imgUzb {
+    width: 300px;
+}
+
+#imgBit {
+    width: 300px;
+}
+
+.box {
+    display: flex;
+}
+
+.boxcha {
+    border: 1px solid red;
+    width: 33.3%;
+    height: 400px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.boxcha1 {
+    border: 1px solid red;
+    width: 33.3%;
+    height: 400px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.skinCoin #bitcoin {
+    width: 150px;
+    height: 40px;
+    margin: auto;
+}
+
+.skinCoin #dragon {
+    width: 150px;
+    height: 40px;
+    margin: auto;
+}
+
+.skinCoin #uzbek {
+    width: 150px;
+    height: 40px;
+    margin: auto;
+}
+#moon{
+    width: 50px;
+    filter: drop-shadow(5px 1px 10px);
+}
+.forFixed{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    background-color: black;
+    opacity: unset;
+    z-index: 10;
+
+}
+#sun{
+    width: 50px;
+    filter: drop-shadow(1px 1px 10px);
+}

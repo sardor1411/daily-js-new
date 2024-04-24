@@ -1,0 +1,10 @@
+button:active {
+    background-color: red;
+    border: none;
+    scale: 1.5;
+    color: white;
+}
+
+button {
+    border: none;
+}

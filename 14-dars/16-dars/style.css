@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(1, 25, 47);
+    color: white;
+    box-sizing: border-box;
+}
+
+#form{
+    max-width: 300px;
+}
+#form input,#form button{
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border: 1px solid white;
+    color: white;
+    box-shadow: white 0px 0px 50px -10px ;
+}
+#form input::placeholder{
+    color: white;
+}
+#form button{
+    width: 101%;
+    margin-top: 10px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    font-weight: 750;
+    
+}
+#form button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+
+#edit__modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(63, 63, 63, 0.269);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__content {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(63, 63, 63, 0.269);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__close {
+    position: relative;
+    top: -20px;
+    left: 600px;
+    
+}
+.edit__todo__input{
+    width: 230px;
+    border: 1px solid white;
+    text-align: center;
+    height: 50px;
+}
+.editBall{
+    width: 230px;
+    border: 1px solid white;
+    text-align: center;
+    height: 50px;
+}
+#dateModal{
+    width: 230px;
+    border: 1px solid white;
+    text-align: center;
+    height: 50px;
+}
+.button__edit__todo{
+    width: 150px;
+    text-align: center;
+    height: 52px;
+    background-color: white;
+    color: black;
+    font-weight: 750;
+    font-size: 15px;
+    border: white;
+    /* margin-top: 50px; */
+}
+.edit__todo__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width: 700px;
+    height: 100px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
+    
+}
+.button__edit__todo:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    border: none;
+    transition: all 0.5s ease 0s;
+    border-radius: 20px;
+}
+#succesModal{
+    font-size: 25px;
+    font-weight: 700;
+}
+#errorModal{
+    font-size: 25px;
+    font-weight: 700;
+}
+.fa-times{
+    font-size: 25px;
+}
+.fa-times:hover{
+    rotate: 200deg;
+}
+
+#data {
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
+
+#form {
+    width: 50%;
+    margin: auto;
+}
+
+#btn {
+    width: 100px;
+    height: 25px;
+}
+.no{
+    max-width: 50px;
+}
+p {
+    text-align: center;
+}
+.fa-trash:hover{
+    color: red;
+    transition: all 0.3s ease 0s;
+}
+.fa-pen-to-square:hover{
+    color: yellow;
+    transition: all 0.3s ease 0s;
+}
+td:hover{
+    border-bottom: 1px solid red;
+
+}
+
+
+
+
+
+
+
+
+
+

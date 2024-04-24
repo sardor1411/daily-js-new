@@ -1,0 +1,28 @@
+input{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+button{
+    width: 200px;
+    height: 55px;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 580px;
+}
+body{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inputMain{
+    display: flex;
+    margin: auto;
+    width: 87%;
+    
+}

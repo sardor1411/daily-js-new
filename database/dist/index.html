@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Firebase_form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="form">
+            <h2>Login Form</h2>
+            <form>
+                <div class="inputbox">
+                    <input type="text" value="" id="username" required>
+                    <span>username</span>
+                </div>
+                <div class="inputbox">
+                    <input type="email" value="" id="email" required>
+                    <span>E-mail</span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" value="" id="phone" required>
+                    <span>Phone Number</span>
+                </div>
+                <input type="submit" value="submit" class="sub" id="submit">
+            </form>
+        </div>
+    </div>
+    <p id="p">0</p>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyBf42fJw21S4UmRbAakxsqy2kAXJirOIqc",
+            authDomain: "zilolamedia-27376.firebaseapp.com",
+            projectId: "zilolamedia-27376",
+            storageBucket: "zilolamedia-27376.appspot.com",
+            messagingSenderId: "427539187016",
+            appId: "1:427539187016:web:eaf06237583cfaab629f7d"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        document.getElementById("submit").addEventListener('click', function (e) {
+            e.preventDefault();
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            const phoneNumber = document.getElementById("phone").value;
+
+            set(ref(db, 'user/' + username), {
+                username: username,
+                email: email,
+                phoneNumber: phoneNumber
+            }).then(() => {
+                alert("Login Successful!");
+                document.getElementById('p').textContent = `Username: ${username}, Email: ${email}, Phone Number: ${phoneNumber}`;
+            }).catch((error) => {
+                alert("An error occurred. Please try again.");
+                console.error(error);
+            });
+            (function () {
+                malumot = JSON.parse(localStorage.getItem('malum'));
+                oqish();
+            })();
+        });
+        enableIndexedDbPersistence(db)
+            .then(() => {
+                // Saqlash yoqildi
+            })
+            .catch((error) => {
+                // Saqlash yoqilmadi
+                console.error(error);
+            });
+
+        // Ma'lumot yozish funktsiyasi
+        function writeUserData() {
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            const phoneNumber = document.getElementById("phone").value;
+
+            set(ref(db, 'user/' + username), {
+                username: username,
+                email: email,
+                phoneNumber: phoneNumber
+            }).then(() => {
+                alert("Login Successful!");
+                document.getElementById('p').textContent = `Username: ${username}, Email: ${email}, Phone Number: ${phoneNumber}`;
+            }).catch((error) => {
+                alert("An error occurred. Please try again.");
+                console.error(error);
+            });
+        }
+
+
+
+
+
+
+
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js"></script>
+
+</body>
+
+</html>
