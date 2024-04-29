@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Books - Shopping</title>
+        <link rel="shortcut icon" href="./Assets/Images/logo.png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+            rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="nav container grid" id="nav">
+                <a href class="nav_logo grid">
+                    <img
+                        src="./img/download.png"
+                        alt />
+                    <span>BOOKSHOP</span>
+                </a>
+                <div class="nav_menu" id="nav_menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href class="nav_link active-link">Home</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href class="nav_link">Magazines</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href class="nav_link">Books</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href class="nav_link">Textbooks</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href class="nav_link">Audiobooks</a>
+                        </li>
+                    </ul>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <div class="nav_icons">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-fill"></i>
+                    </div>
+                    <div class="shopping-icon" id="cart">
+                        <i class="ri-shopping-cart-2-line">
+                            <span class="quantity">0</span></i>
+                    </div>
+                    <div class="like-icon">
+                        <i class="ri-heart-line"><span
+                                class="quantity">0</span></i>
+                    </div>
+                    <div class="user-icon">
+                        <i class="ri-user-line"></i>
+                    </div>
+                    <div class="light-icon">
+                        <i class="ri-sun-line" id="sun"></i>
+                        <i class="ri-moon-line hide" id="moon"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section id="home" class="home section">
+                <div class="home_bg">
+                    <img
+                        src="https://meek-haupia-827c15.netlify.app/Assets/Images/homeBackground.jpg"
+                        alt />
+                    <img
+                        src="https://meek-haupia-827c15.netlify.app/Assets/Images/homeBackground2.jpg"
+                        alt />
+                </div>
+                <div class="buttons">
+                    <div class="leftArrow"><i
+                            class="ri-arrow-drop-left-line"></i></div>
+                    <div class="rightArrow"><i
+                            class="ri-arrow-drop-right-line"></i></div>
+                </div>
+            </section>
+            <section id="benefits" class="benefits">
+                <div class="ben_cards container grid">
+                    <div class="ben_card">
+                        <div class="left">
+                            <img
+                                class="image-icon"
+                                src="./Assets/Images/delivery-truck.png"
+                                alt />
+                            <img
+                                class="image-icon hide"
+                                src="./Assets/Images/delivery-truck1.png"
+                                alt />
+                        </div>
+                        <div class="right">
+                            <h2>Quick Delivery</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="ben_card">
+                        <div class="left">
+                            <img class="image-icon"
+                                src="./Assets/Images/pay.png" alt />
+                            <img
+                                class="image-icon hide"
+                                src="./Assets/Images/pay1.png"
+                                alt />
+                        </div>
+                        <div class="right">
+                            <h2>Pay with Easy</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="ben_card">
+                        <div class="left">
+                            <img
+                                class="image-icon"
+                                src="./Assets/Images/best-price.png"
+                                alt />
+                            <img
+                                class="image-icon hide"
+                                src="./Assets/Images/best-price1.png"
+                                alt />
+                        </div>
+                        <div class="right">
+                            <h2>Best Deal</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="ben_card">
+                        <div class="left">
+                            <img
+                                class="image-icon"
+                                src="./Assets/Images/credit-card.png"
+                                alt />
+                            <img
+                                class="image-icon hide"
+                                src="./Assets/Images/credit-card1.png"
+                                alt />
+                        </div>
+                        <div class="right">
+                            <h2>Secured Payment</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="products" class="products">
+                <h1>Products</h1>
+                <div class="product grid">
+                    <div class="product-left">
+                        <h2 class="title-left">Categories</h2>
+                        <ul class="collections">
+                            <li class="list active" data-filter="all">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>
+                                All Collections
+                            </li>
+                            <li class="list" data-filter="modern">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Modern
+                            </li>
+                            <li class="list" data-filter="biography">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Biography
+                            </li>
+                            <li class="list" data-filter="classic">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Classics
+                            </li>
+                            <li class="list" data-filter="cookbook">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Cookbooks
+                            </li>
+                            <li class="list" data-filter="detective">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Detective
+                            </li>
+                            <li class="list" data-filter="fantasy">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Fantasy
+                            </li>
+                            <li class="list" data-filter="fairy tale">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Fairy tale
+                            </li>
+                            <li class="list" data-filter="fiction">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Fiction
+                            </li>
+                            <li class="list" data-filter="horror">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Horror
+                            </li>
+                            <li class="list" data-filter="historical fiction">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Historical fiction
+                            </li>
+                            <li class="list" data-filter="history">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>History
+                            </li>
+                            <li class="list" data-filter="romance">
+                                <span class="active-list on">
+                                    <i class="fa-regular fa-circle"></i>
+                                </span>Romance
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-right">
+                        <div class="product-right-top">
+                            <form class="form grid" action>
+                                <input
+                                    type="text"
+                                    class="input"
+                                    id="mySearch"
+                                    placeholder="Search by Title..." />
+                                <i class="fa-solid fa-right-left"
+                                    id="searchBtn"></i>
+                            </form>
+                        </div>
+                        <div class="product-right-bottom grid"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="card">
+            <h1>Card</h1>
+            <ul class="listCard"></ul>
+            <div class="checkOut grid">
+                <div class="total">0</div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div>
+        <div class="popCard">
+            <h1>Rename</h1>
+            <form class="popCardForm" action>
+                <div class="popImageCard">
+                    <label class="popImageLabel" for="popImage">Upload Image
+                        <img
+                            src="https://www.generationsforpeace.org/wp-content/uploads/2018/03/empty.jpg"
+                            alt class="popImagish"></label>
+                    <input
+                        type="file"
+                        name="upload"
+                        accept="image/png, image/jpeg"
+                        placeholder="Change Image..." id="popImage" />
+                </div>
+                <input type="text" placeholder="Change Title..."
+                    class="popTitle" />
+                <input type="text" placeholder="Change Type..."
+                    class="popType" />
+                <input type="text" placeholder="Change Author..."
+                    class="popAuthor" />
+                <input type="number" placeholder="Change Price..."
+                    class="popPrice" />
+            </form>
+            <div class="popCardClose1" id="popCardClose">
+                <i class="ri-close-line"></i>
+            </div>
+            <button class="popCardSaveButton"
+                onclick="popCardSave()">Save</button>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
